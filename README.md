@@ -9,7 +9,11 @@ flash dump made with following commands
 9601C# md.b 0x80000000 0x1000000
 ```
 
-then converted to bin file with python3 uboot_mdb_to_image.py < uf_mdb_dump.txt > flash.bin
+then converted to bin file with 
+
+```
+python3 uboot_mdb_to_image.py < uf_mdb_dump.txt > flash.bin
+```
 
 both files are included in repo.
 
