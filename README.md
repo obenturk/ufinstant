@@ -3,15 +3,17 @@ mdb dump of ufinstant
 
 flash dump made with following commands
 
+```
 9601C# sf probe 0
 9601C# sf read 0x80000000 0x0 0x1000000
 9601C# md.b 0x80000000 0x1000000
+```
 
 then converted to bin file with python3 uboot_mdb_to_image.py < uf_mdb_dump.txt > flash.bin
 
 both files are included in repo.
 
-binwalk
+- binwalk
 
     ```
 	obenturk@HomeAssistant:~/uboot-mdb-dump$ binwalk flash.bin
