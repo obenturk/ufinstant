@@ -1,3 +1,4 @@
+```
 =~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2021.04.03 23:37:10 =~=~=~=~=~=~=~=~=~=~=~=
 RTL9601C
 PRELOADER Bismarck 3.5
@@ -429,4 +430,4 @@ Built-in commands:
 	umask unalias unset wait
 
 # TEMP_CHANGE_INT
- 
+```
