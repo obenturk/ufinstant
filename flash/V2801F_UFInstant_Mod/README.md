@@ -1,4 +1,4 @@
-*###replaced files
+###replaced files
 
 ```
 /bin/diag
@@ -9,7 +9,7 @@ chown 1013
 chmod 775
 
 
-*###added files
+###added files
 ```
 /lib/modules/europa_drv.ko
 ```
@@ -17,9 +17,9 @@ chmod 775
 chown 1013
 chmod 664
 
-*###changed files
+###changed files
 
-*####rc2
+####rc2
 ```
 mkdir /var/hw
 
@@ -35,7 +35,7 @@ elif [[ ! -f  /var/config/europa.data ]]; then
 fi
 ```
 
-*####rc32
+####rc32
 ```
 insmod /lib/modules/europa_drv.ko PON_MODE=1 I2C_PORT=1 INTR_PIN=0 TXDIS_PIN=13 TXPWR_PIN=15
 ```
