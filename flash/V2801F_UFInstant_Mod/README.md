@@ -7,6 +7,7 @@
 chown 1013
 chmod 775
 
+
 ###added files
 /lib/modules/europa_drv.ko
 
