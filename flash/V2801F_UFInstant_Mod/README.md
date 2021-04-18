@@ -1,23 +1,26 @@
-###replaced files
+*###replaced files
 
+```
 /bin/diag
 /bin/europacli
 /bin/busybox
-
+```
 chown 1013
 chmod 775
 
 
-###added files
+*###added files
+```
 /lib/modules/europa_drv.ko
+```
 
 chown 1013
 chmod 664
 
-###changed files
+*###changed files
 
-####rc2
-'''
+*####rc2
+```
 mkdir /var/hw
 
 mount -t jffs2 -o ro /dev/mtdblock8 /var/hw
@@ -30,7 +33,9 @@ elif [[ ! -f  /var/config/europa.data ]]; then
     echo "Warning: File /var/hw/europa.data nor /var/config/europa.data doesn't exist!!!. Generating."
     /bin/europacli open default
 fi
-'''
-####rc32
-'''
+```
+
+*####rc32
+```
 insmod /lib/modules/europa_drv.ko PON_MODE=1 I2C_PORT=1 INTR_PIN=0 TXDIS_PIN=13 TXPWR_PIN=15
+```
